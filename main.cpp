@@ -1,4 +1,4 @@
-#include <iostream>
+#include <stdio.h>
 
 
 
@@ -10,26 +10,28 @@ int main() {
 	int b;
 	int res;
 
-	cout << "Enter number: "; 
-	cin >> a; 
-	res = a * a; 
-	cout << endl << "Square of " << a << " is " << res << endl;
+	printf("Enter 1st number: ");
+	scanf_s("%i", &a);
 
-	cout << "Enter 2nd number: ";
-	cin >> b;
+	printf("Enter 2nd number: ");
+	scanf_s("%i", &b);
+
+	res = a * a;
+	printf("Square of %i is %i\n", a, res);
 
 	res = a + b;
-	cout << endl << a << " + " << b << " = " << res << endl;
+	printf("%i + %i = %i\n", a, b, res);
 
 	res = a - b;
-	cout << endl << a << " - " << b << " = " << res << endl;
+	printf("%i - %i = %i\n", a, b, res);
 
 	res = a * b;
-	cout << endl << a << " * " << b << " = " << res << endl;
+	printf("%i * %i = %i\n", a, b, res);
 
 	double result;
 	result = double(a) / double(b);
-	cout << endl << a << " / " << b << " = " << result << endl;
+	printf("%i / %i = %f\n", a, b, result);
+
 
 
 	return 0;
